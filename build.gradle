@@ -20,13 +20,15 @@ apply plugin: 'forge'
 sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 
-version = "4.0.3.1"
+version = "1.7.10R4.1.5.1"
 group = "thermalexpansion"
 archivesBaseName = "ThermalExpansion"
 
 minecraft {
     version = "1.7.10-10.13.4.1448-1.7.10"
     runDir = "eclipse/assets"
+    replace "@VERSION@", project.version
+    replaceIn "ThermalExpansion.java"
 }
 
 repositories {
